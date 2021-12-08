@@ -13,6 +13,11 @@
     .grid-container footer {
       grid-area: footer; } }
 
+li {
+  padding: 50px; }
+  li a {
+    color: red; }
+
 .encabezado {
   padding: 50px; }
   .encabezado h1 {

@@ -1,0 +1,21 @@
+//variables
+
+$azul:blue;
+$negro:black;
+$flex:flex;
+$ptop:50px;
+$rojo:red;
+
+
+
+
+
+//nesting
+
+li{
+	padding: $ptop;
+	a {
+		color:$rojo;
+
+	}
+}
