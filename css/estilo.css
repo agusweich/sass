@@ -1,7 +1,9 @@
 @media only screen and (min-width: 1023px) {
   .grid-container {
     display: grid;
-    grid-template-areas: "logo nav nav" "contenido contenido contenido" "footer footer footer";
+    grid-template-areas: "logo nav nav"
+ "contenido contenido contenido"
+ "footer footer footer";
     grid-template-rows: repeat(3, 33%);
     grid-template-columns: 150px 1fr 400px; }
     .grid-container .logo {
@@ -16,15 +18,28 @@
 li {
   padding: 50px; }
   li a {
-    color: red; }
+    color: red;
+    text-decoration: none;
+    margin-left: 200px;
+    font-weight: bolder; }
+  li:hover {
+    color: black; }
 
 .encabezado {
   padding: 50px; }
   .encabezado h1 {
-    font-size: 50px; }
+    font-size: 100px; }
+
+img {
+  width: 400px;
+  heigth: auto; }
+
+.imagen {
+  width: auto;
+  heigth: auto; }
 
 footer {
-  background-color: blue;
+  background-color: black;
   display: flex; }
   footer h3 {
     color: red; }
