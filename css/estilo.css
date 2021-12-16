@@ -29,6 +29,9 @@ img {
   width: 400px;
   heigth: auto; }
 
+h3 {
+  color: grey; }
+
 footer {
   background-color: black;
   display: flex; }
@@ -56,3 +59,6 @@ p {
   color: red;
   font-size: fsize;
   text-align: center; }
+
+h3 {
+  color: grey; }
