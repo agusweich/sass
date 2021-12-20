@@ -1,0 +1,7 @@
+Le agregue map, mixin,extend.
+modifique el tamaño de las imagenes para que se ajusten mejor a la pagina
+Le quite en el menu algunas secciones que quedaban sin completar y me asegure que queden bien los enlaces entre estas secciones.
+Agregue meta name keywords y description. Le di prioridad a que en cada seccion diga algo nuevo para que varie y sea mas completa el motor de busqueda.
+Le cambie el lenguaje al principio para que no me pida siempre traducir del ingles.
+Agregue secciones que antes no se veian.
+Probe agregar un mapget
