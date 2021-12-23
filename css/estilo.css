@@ -1,7 +1,9 @@
 @media only screen and (min-width: 1023px) {
   .grid-container {
     display: grid;
-    grid-template-areas: "logo nav nav" "contenido contenido contenido" "footer footer footer";
+    grid-template-areas: "logo nav nav"
+ "contenido contenido contenido"
+ "footer footer footer";
     grid-template-rows: repeat(3, 33%);
     grid-template-columns: 150px 1fr 400px; }
     .grid-container .logo {
@@ -33,7 +35,7 @@ h3 {
   color: grey; }
 
 footer {
-  background-color: black;
+  background-color: grey;
   display: flex; }
   footer h3 {
     color: red; }
@@ -62,3 +64,51 @@ p {
 
 h3 {
   color: grey; }
+
+
+
+  *{
+   margin: 0px;
+   padding: 0px;
+ }
+ .bg-nav{
+  background-color: lightblue;
+
+ }
+
+ .bgg{
+  background-color: lightblue;
+  padding: 200px;
+ }
+
+ .bbb:hover{
+  transform: translateX(-200px);
+  transform: scale(1.1);
+    transition: all 4s;
+ }
+
+
+
+ .logo{
+   width: 70px;
+   height: auto;
+ }
+
+ 
+
+ footer ul li{
+   list-style: none;
+
+
+ }
+
+ul{
+   display: flex;
+   flex-direction: row;
+   
+   
+}
+
+li{
+   justify-content: space-between;
+}
