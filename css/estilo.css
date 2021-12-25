@@ -1,9 +1,10 @@
 @media only screen and (min-width: 1023px) {
   .grid-container {
     display: grid;
-    grid-template-areas: "logo nav nav"
- "contenido contenido contenido"
- "footer footer footer";
+    grid-template-areas:
+      "logo nav nav"
+      "contenido contenido contenido"
+      "footer footer footer";
     grid-template-rows: repeat(3, 33%);
     grid-template-columns: 150px 1fr 400px; }
     .grid-container .logo {
@@ -29,7 +30,7 @@ li {
 
 img {
   width: 400px;
-  heigth: auto; }
+  height: auto; }
 
 h3 {
   color: grey; }
@@ -78,7 +79,7 @@ h3 {
 
  .bgg{
   background-color: lightblue;
-  padding: 200px;
+  /* padding: 200px; */
  }
 
  .bbb:hover{
@@ -98,8 +99,6 @@ h3 {
 
  footer ul li{
    list-style: none;
-
-
  }
 
 ul{
@@ -111,4 +110,8 @@ ul{
 
 li{
    justify-content: space-between;
+}
+
+body{
+  margin: 0;
 }
