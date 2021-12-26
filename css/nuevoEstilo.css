@@ -1,9 +1,13 @@
+*{
+   margin: 0px;
+   padding: 0px;
+ }
 img {
     width: 400px;
     height: auto; }
 
 body{
-    background-color: aqua;
+    background-color: navajowhite;
 }
 
 .imgscale:hover{
