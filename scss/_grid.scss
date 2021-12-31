@@ -1,36 +1,58 @@
 //var
 
 $grid:grid;
+$flex:flex;  	
 
-@media only screen and (min-width:1023px){
-   .grid-container{
-   	display:$grid;
-   	grid-template-areas:
-   	"logo nav nav"
-   	"contenido contenido contenido"
-   	"footer footer footer";
-   	grid-template-rows: repeat(3,33%);
-   	grid-template-columns:150px 1fr 400px;
-   	.logo{
-   		grid-area:logo;
+.contenedor{
+    display: $grid;
+    height: 100vh;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header nav"
+        "h1 seccion"
+        "foot foot" ;
+}
 
-   	}
+.contenedor > nav > ul{
+    display: $flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
 
-   	.nav{
-   		grid-area:nav;
+.contenedor > header{
+    grid-area: header;
+}
 
-   	}
+.contenedor > nav{
+    grid-area: nav;
+}
 
-   	.encabezado{
-   		grid-area:encabezado;
-   		
-   	}
+.contenedor > h1{
+    grid-area: h1;
+}
 
-   	footer{
-   		grid-area:footer;
-   		
-   	}
+.contenedor > .seccion{
+    grid-area: seccion;
+}
 
-  }
-}   	
-   
+.contenedor > .foot{
+    grid-area: foot;
+    display: $flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 550px){
+    .contenedor{
+        display: $grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "h1"
+        "seccion"
+        "foot";
+    }
+}

@@ -1,10 +1,10 @@
 @import "colores";
 $flex:flex;
-
+$center: center;
+$space-between: space-between;
 footer{
-	background-color: $negro;
-	display:$flex;
-	h3{
-		color:$rojo;
-	}
+    background-color: $lightblue;
+    text-align: $center;
+    display: $flex;
+    justify-content: $space-between;
 }

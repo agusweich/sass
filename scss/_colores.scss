@@ -1,16 +1,9 @@
 $azul:blue;
 $rojo:red;
 $negro:black;
-
-
-$paletacolores:(
-	primario: grey,
-	secundario: lightblue,
-	);
-
-h3{
-	color: map-get($paletacolores,primario);
-}
-
+$lightblue:lightblue;
+$navajowhite:navajowhite;
+$royalblue:royalblue;
+$whitesmoke: whitesmoke;
 
 

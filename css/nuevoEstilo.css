@@ -1,65 +1,76 @@
-*{
-   margin: 0px;
-   padding: 0px;
- }
+.contenedor {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header nav" "h1 seccion" "foot foot"; }
+
+.contenedor > nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; }
+
+.contenedor > header {
+  grid-area: header; }
+
+.contenedor > nav {
+  grid-area: nav; }
+
+.contenedor > h1 {
+  grid-area: h1; }
+
+.contenedor > .seccion {
+  grid-area: seccion; }
+
+.contenedor > .foot {
+  grid-area: foot;
+  display: flex;
+  justify-content: space-around; }
+
+@media only screen and (max-width: 550px) {
+  .contenedor {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas: "header" "nav" "h1" "seccion" "foot"; } }
+
+footer {
+  background-color: lightblue;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: navajowhite;
+  font-family: "Pushster", cursive; }
+
 img {
-    width: 400px;
-    height: auto; }
+  width: 400px;
+  height: auto; }
 
-body{
-    background-color: navajowhite;
-    font-family: 'Pushster', cursive;
+.imgscale:hover {
+  transform: translateX(-200px);
+  transform: scale(1.1);
+  transition: all 4s; }
 
-}
+a {
+  text-decoration: none;
+  float: right;
+  padding-right: 200px;
+  justify-content: center; }
 
-.imgscale:hover{
-    transform: translateX(-200px);
-    transform: scale(1.1);
-    transition: all 4s;
-}
+.contact {
+  background-color: royalblue;
+  margin: 0px; }
 
+.seccion {
+  background-color: whitesmoke;
+  padding: 50px; }
 
-a{
-    text-decoration: none;
-    float: right;
-    padding-right: 200px;
-    justify-content: center;
-
-}
-
-
-
-
-
-
-
-footer{
-    background-color: lightblue;
-    text-align: center;
-
-    
-}
-
-
-.contact{
-    background-color: royalblue;
-    margin: 0px;
-
-}
-
-.seccion{
-    background-color: whitesmoke;
-    padding: 50px;
-
-
-}
-
-form{
-    width: 300px;
-
-
-
-
-
-
-
+form {
+  width: 300px; }
